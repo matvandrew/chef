@@ -1,0 +1,96 @@
+[2017-04-05T19:35:20+01:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /root
+  One version per cookbook
+
+[2017-04-05T19:35:20+01:00] INFO: Forking chef instance to converge...
+[2017-04-05T19:35:20+01:00] INFO: *** Chef 12.18.31 ***
+[2017-04-05T19:35:20+01:00] INFO: Platform: x86_64-linux
+[2017-04-05T19:35:20+01:00] INFO: Chef-client pid: 1507
+[2017-04-05T19:35:25+01:00] INFO: Setting the run_list to ["recipe[chef_nginx::default]", "recipe[iptables::default]", "recipe[firewall::default]"] from CLI options
+[2017-04-05T19:35:25+01:00] INFO: Run List is [recipe[chef_nginx::default], recipe[iptables::default], recipe[firewall::default]]
+[2017-04-05T19:35:25+01:00] INFO: Run List expands to [chef_nginx::default, iptables::default, firewall::default]
+[2017-04-05T19:35:25+01:00] INFO: Starting Chef Run for epplkraw0381t1.budapest.epam.com
+[2017-04-05T19:35:25+01:00] INFO: Running start handlers
+[2017-04-05T19:35:25+01:00] INFO: Start handlers complete.
+[2017-04-05T19:35:25+01:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+[2017-04-05T19:35:27+01:00] INFO: Loading cookbooks [chef_nginx@6.0.1, iptables@4.0.1, firewall@2.5.4, build-essential@8.0.0, ohai@5.0.2, yum-epel@2.1.1, compat_resource@12.16.3, zypper@0.3.0, chef-sugar@3.4.0, seven_zip@2.0.2, mingw@2.0.0, windows@3.0.4]
+[2017-04-05T19:35:27+01:00] INFO: Processing ohai_plugin[nginx] action create (chef_nginx::ohai_plugin line 29)
+[2017-04-05T19:35:27+01:00] WARN: The Ohai plugin_path does not include /root/.chef/ohai/plugins. Ohai will reload on each chef-client run in order to add this directory to the path unless you modify your client.rb configuration to add this directory to plugin_path. The plugin_path can be set via the chef-client::config recipe. See 'Ohai Settings' at https://docs.chef.io/config_rb_client.html#ohai-settings for more details.
+[2017-04-05T19:35:27+01:00] WARN: Adding /root/.chef/ohai/plugins to the Ohai plugin path for this chef-client run only
+[2017-04-05T19:35:27+01:00] INFO: Processing directory[/root/.chef/ohai/plugins] action create (/root/.chef/cookbooks/ohai/resources/plugin.rb line 80)
+[2017-04-05T19:35:27+01:00] INFO: Processing template[/root/.chef/ohai/plugins/nginx.rb] action create (/root/.chef/cookbooks/ohai/resources/plugin.rb line 93)
+[2017-04-05T19:35:27+01:00] INFO: Processing ohai[nginx] action reload (/root/.chef/cookbooks/ohai/resources/plugin.rb line 110)
+[2017-04-05T19:35:31+01:00] INFO: ohai[nginx] reloaded
+[2017-04-05T19:35:31+01:00] INFO: Processing chef_gem[chef-sugar] action install (chef-sugar::default line 23)
+[2017-04-05T19:35:32+01:00] INFO: Processing ohai[reload_nginx] action nothing (chef_nginx::ohai_plugin line 24)
+[2017-04-05T19:35:32+01:00] INFO: Processing ohai_plugin[nginx] action create (chef_nginx::ohai_plugin line 29)
+[2017-04-05T19:35:32+01:00] INFO: Processing directory[/root/.chef/ohai/plugins] action create (/root/.chef/cookbooks/ohai/resources/plugin.rb line 80)
+[2017-04-05T19:35:32+01:00] INFO: Processing template[/root/.chef/ohai/plugins/nginx.rb] action create (/root/.chef/cookbooks/ohai/resources/plugin.rb line 93)
+[2017-04-05T19:35:32+01:00] INFO: Processing ohai[nginx] action nothing (/root/.chef/cookbooks/ohai/resources/plugin.rb line 110)
+[2017-04-05T19:35:32+01:00] INFO: Processing yum_repository[nginx] action create (chef_nginx::repo line 24)
+[2017-04-05T19:35:32+01:00] INFO: Processing template[/etc/yum.repos.d/nginx.repo] action create (/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/provider/yum_repository.rb line 42)
+[2017-04-05T19:35:32+01:00] INFO: Processing execute[yum clean metadata nginx] action nothing (/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/provider/yum_repository.rb line 59)
+[2017-04-05T19:35:32+01:00] INFO: Processing execute[yum-makecache-nginx] action nothing (/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/provider/yum_repository.rb line 65)
+[2017-04-05T19:35:32+01:00] INFO: Processing ruby_block[yum-cache-reload-nginx] action nothing (/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/provider/yum_repository.rb line 72)
+[2017-04-05T19:35:32+01:00] INFO: Processing yum_package[nginx] action install (chef_nginx::package line 43)
+[2017-04-05T19:35:34+01:00] INFO: Processing service[nginx] action start (chef_nginx::package line 48)
+[2017-04-05T19:35:35+01:00] INFO: Processing service[nginx] action enable (chef_nginx::package line 48)
+[2017-04-05T19:35:35+01:00] INFO: Processing directory[/etc/nginx] action create (chef_nginx::commons_dir line 22)
+[2017-04-05T19:35:35+01:00] INFO: Processing directory[/var/log/nginx] action create (chef_nginx::commons_dir line 27)
+[2017-04-05T19:35:35+01:00] INFO: Processing directory[pid file directory] action create (chef_nginx::commons_dir line 34)
+[2017-04-05T19:35:35+01:00] INFO: Processing directory[/etc/nginx/sites-available] action create (chef_nginx::commons_dir line 41)
+[2017-04-05T19:35:35+01:00] INFO: Processing directory[/etc/nginx/sites-enabled] action create (chef_nginx::commons_dir line 41)
+[2017-04-05T19:35:35+01:00] INFO: Processing directory[/etc/nginx/conf.d] action create (chef_nginx::commons_dir line 41)
+[2017-04-05T19:35:35+01:00] INFO: Processing template[/usr/sbin/nxensite] action create (chef_nginx::commons_script line 23)
+[2017-04-05T19:35:35+01:00] INFO: Processing template[/usr/sbin/nxdissite] action create (chef_nginx::commons_script line 23)
+[2017-04-05T19:35:35+01:00] INFO: Processing template[nginx.conf] action create (chef_nginx::commons_conf line 22)
+[2017-04-05T19:35:35+01:00] INFO: Processing template[/etc/nginx/sites-available/default] action create (chef_nginx::commons_conf line 30)
+[2017-04-05T19:35:35+01:00] INFO: Processing chef_nginx_site[default] action enable (chef_nginx::commons_conf line 35)
+[2017-04-05T19:35:35+01:00] INFO: Processing execute[nxensite default] action run (/root/.chef/cookbooks/chef_nginx/resources/site.rb line 52)
+[2017-04-05T19:35:35+01:00] INFO: Processing yum_package[iptables] action install (iptables::_package line 23)
+[2017-04-05T19:35:39+01:00] INFO: Processing execute[rebuild-iptables] action nothing (iptables::default line 24)
+[2017-04-05T19:35:39+01:00] INFO: Processing directory[/etc/iptables.d] action create (iptables::default line 29)
+[2017-04-05T19:35:39+01:00] INFO: Processing template[/usr/sbin/rebuild-iptables] action create (iptables::default line 33)
+[2017-04-05T19:35:39+01:00] INFO: Processing template[/etc/network/if-pre-up.d/iptables_load] action create (iptables::default line 42)
+[2017-04-05T19:35:39+01:00] INFO: Processing file[/etc/sysconfig/iptables] action create_if_missing (iptables::default line 51)
+[2017-04-05T19:35:39+01:00] INFO: Processing template[/etc/sysconfig/iptables-config] action create (iptables::default line 56)
+[2017-04-05T19:35:39+01:00] INFO: Processing template[/etc/sysconfig/ip6tables-config] action create (iptables::default line 62)
+[2017-04-05T19:35:39+01:00] INFO: Processing service[iptables] action enable (iptables::default line 68)
+[2017-04-05T19:35:39+01:00] INFO: Processing service[iptables] action start (iptables::default line 68)
+[2017-04-05T19:35:40+01:00] INFO: Processing chef_gem[chef-sugar] action install (chef-sugar::default line 23)
+[2017-04-05T19:35:40+01:00] INFO: Processing firewall[default] action install (firewall::default line 22)
+[2017-04-05T19:35:40+01:00] WARN: Cloning resource attributes for yum_package[iptables] from prior resource
+Previous yum_package[iptables]: /root/.chef/cookbooks/iptables/recipes/_package.rb:23:in `from_file'
+Current  yum_package[iptables]: /root/.chef/cookbooks/firewall/libraries/provider_firewall_iptables.rb:39:in `block (3 levels) in <class:FirewallIptables>' (CHEF-3694)/root/.chef/cookbooks/firewall/libraries/provider_firewall_iptables.rb:39:in `block (3 levels) in <class:FirewallIptables>'.
+Please see https://docs.chef.io/deprecations_resource_cloning.html for further details and information on how to correct this problem. at /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/event_dispatch/dispatcher.rb:43:in `call'
+[2017-04-05T19:35:40+01:00] WARN: Cloning resource attributes for service[iptables] from prior resource
+Previous service[iptables]: /root/.chef/cookbooks/iptables/recipes/default.rb:68:in `from_file'
+Current  service[iptables]: /root/.chef/cookbooks/firewall/libraries/provider_firewall_iptables.rb:52:in `block (3 levels) in <class:FirewallIptables>' (CHEF-3694)/root/.chef/cookbooks/firewall/libraries/provider_firewall_iptables.rb:52:in `block (3 levels) in <class:FirewallIptables>'.
+Please see https://docs.chef.io/deprecations_resource_cloning.html for further details and information on how to correct this problem. at /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/event_dispatch/dispatcher.rb:43:in `call'
+[2017-04-05T19:35:40+01:00] INFO: Processing yum_package[iptables] action install (/root/.chef/cookbooks/firewall/libraries/provider_firewall_iptables.rb line 39)
+[2017-04-05T19:35:40+01:00] INFO: Processing yum_package[iptables-ipv6] action install (/root/.chef/cookbooks/firewall/libraries/provider_firewall_iptables.rb line 39)
+[2017-04-05T19:35:40+01:00] INFO: Processing file[create empty /etc/sysconfig/iptables] action create (/root/.chef/cookbooks/firewall/libraries/provider_firewall_iptables.rb line 46)
+[2017-04-05T19:35:40+01:00] INFO: Processing service[iptables] action enable (/root/.chef/cookbooks/firewall/libraries/provider_firewall_iptables.rb line 52)
+[2017-04-05T19:35:40+01:00] INFO: Processing service[iptables] action start (/root/.chef/cookbooks/firewall/libraries/provider_firewall_iptables.rb line 52)
+[2017-04-05T19:35:40+01:00] INFO: Processing file[create empty /etc/sysconfig/ip6tables] action create (/root/.chef/cookbooks/firewall/libraries/provider_firewall_iptables.rb line 46)
+[2017-04-05T19:35:40+01:00] INFO: Processing service[ip6tables] action enable (/root/.chef/cookbooks/firewall/libraries/provider_firewall_iptables.rb line 52)
+[2017-04-05T19:35:41+01:00] INFO: Processing service[ip6tables] action start (/root/.chef/cookbooks/firewall/libraries/provider_firewall_iptables.rb line 52)
+[2017-04-05T19:35:41+01:00] INFO: Processing firewall_rule[allow world to ssh] action create (firewall::default line 30)
+[2017-04-05T19:35:41+01:00] INFO: Processing firewall_rule[allow world to winrm] action create (firewall::default line 36)
+[2017-04-05T19:35:41+01:00] INFO: Processing firewall_rule[allow world to mosh] action create (firewall::default line 42)
+[2017-04-05T19:35:41+01:00] INFO: Processing firewall_rule[established] action create (firewall::default line 50)
+[2017-04-05T19:35:41+01:00] INFO: firewall_rule[established] not queuing delayed action restart on firewall[default] (delayed), as it's already been queued
+[2017-04-05T19:35:41+01:00] INFO: Processing firewall_rule[ipv6_icmp] action create (firewall::default line 59)
+[2017-04-05T19:35:41+01:00] INFO: firewall_rule[ipv6_icmp] not queuing delayed action restart on firewall[default] (delayed), as it's already been queued
+[2017-04-05T19:35:41+01:00] INFO: Processing firewall_rule[https] action create (firewall::default line 65)
+[2017-04-05T19:35:41+01:00] INFO: firewall_rule[https] not queuing delayed action restart on firewall[default] (delayed), as it's already been queued
+[2017-04-05T19:35:41+01:00] INFO: Processing firewall_rule[http] action create (firewall::default line 72)
+[2017-04-05T19:35:41+01:00] INFO: firewall_rule[http] not queuing delayed action restart on firewall[default] (delayed), as it's already been queued
+[2017-04-05T19:35:41+01:00] INFO: Processing firewall_rule[nginx] action create (firewall::default line 79)
+[2017-04-05T19:35:41+01:00] INFO: firewall_rule[nginx] not queuing delayed action restart on firewall[default] (delayed), as it's already been queued
+[2017-04-05T19:35:41+01:00] INFO: firewall_rule[allow world to ssh] sending restart action to firewall[default] (delayed)
+[2017-04-05T19:35:41+01:00] INFO: Processing firewall[default] action restart (firewall::default line 22)
+[2017-04-05T19:35:41+01:00] INFO: Processing file[/etc/sysconfig/iptables] action create (iptables::default line 51)
+[2017-04-05T19:35:41+01:00] INFO: Processing file[/etc/sysconfig/ip6tables] action create (/root/.chef/cookbooks/firewall/libraries/provider_firewall_iptables.rb line 99)
+[2017-04-05T19:35:41+01:00] INFO: Chef Run complete in 15.459035321 seconds
+[2017-04-05T19:35:41+01:00] INFO: Running report handlers
+[2017-04-05T19:35:41+01:00] INFO: Report handlers complete
