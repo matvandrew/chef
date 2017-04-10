@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/chef":{"guestpath":"/var/chef","hostpath":"/home/student/chef","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/student/chef/task8","disabled":false,"__vagrantfile":true}}}
