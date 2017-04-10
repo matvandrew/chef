@@ -1,0 +1,14 @@
+00:03:59,003 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "testweb.war"
+00:03:59,007 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "testweb.xml"
+00:03:59,083 INFO  [org.jboss.web] (MSC service thread 1-4) JBAS018210: Registering web context: /testweb
+00:03:59,098 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "testweb.xml"
+00:03:59,099 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "testweb.war"
+00:07:44,209 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015877: Stopped deployment testweb.war in 4ms
+00:07:44,210 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment testweb.xml in 5ms
+00:07:44,275 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018558: Undeployed "testweb.war"
+00:07:44,276 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018558: Undeployed "testweb.xml"
+00:10:54,342 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "testweb.war"
+00:10:54,342 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "testweb.xml"
+00:10:54,411 INFO  [org.jboss.web] (MSC service thread 1-2) JBAS018210: Registering web context: /testweb
+00:10:54,437 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018559: Deployed "testweb.xml"
+00:10:54,437 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018559: Deployed "testweb.war"
