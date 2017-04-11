@@ -14,5 +14,3 @@ suites:
     run_list:
       - recipe[web::default]
     attributes: 
-       web: { 'web_server_type': 'nginx' }
-#      web: { 'web_server_type': 'apache' }
