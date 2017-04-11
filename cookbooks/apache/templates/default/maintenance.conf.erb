@@ -1,0 +1,7 @@
+<VirtualHost *:80>
+  RewriteEngine On
+  RewriteCond <%= @maintenance_file %> -f
+  RewriteCond %{SCRIPT_FILENAME} !/maintenance.html
+  RewriteCond %{SCRIPT_FILENAME} !^(.+).(gif|png|jpg|css|js|swf)$
+  RewriteRule ^.*$ <%= @maintenance_file %> [L]
+</VirtualHost>

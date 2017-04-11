@@ -1,0 +1,6 @@
+default['tomcat']['install_path'] = '/opt/tomcat'
+default['tomcat']['package_url'] = 'http://archive.apache.org/dist/tomcat/tomcat-8/v8.5.12/bin/apache-tomcat-8.5.12.tar.gz'
+default['tomcat']['tomcat_user'] = 'tomcat'
+default['tomcat']['tomcat_group'] = 'tomcat'
+default['tomcat']['install_dir'] = '/apache-tomcat-8.5.12'
+default['tomcat']['app_url'] = 'http://www.cumulogic.com/download/Apps/testweb.zip'
