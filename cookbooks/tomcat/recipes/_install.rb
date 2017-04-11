@@ -26,7 +26,7 @@ end
 execute 'untar tomcat archive' do
   user node['tomcat']['tomcat_user']
   group node['tomcat']['tomcat_group']
-  command "tar -xf /tmp/apache-tomcat-8.5.12.tar.gz -C #{tomcat_inst}"
+  command "tar -xf /opt/tomcat/apache-tomcat-8.5.12.tar.gz -C #{tomcat_inst}"
 end
 
 #Yes, it's bash!
