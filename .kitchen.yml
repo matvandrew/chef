@@ -1,0 +1,16 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: sbeliakou/centos-6.8-x86_64
+
+suites:
+  - name: default
+    cookbook 'web', path: '~/chef/task9/cookbooks/web'
+    run_list:
+      - recipe[web::default]
+    attributes: 
